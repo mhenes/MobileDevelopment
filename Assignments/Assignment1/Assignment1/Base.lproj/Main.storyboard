@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" userLabel="SimulationViewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFit" id="tsR-hK-woN" userLabel="SimulationViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
@@ -24,25 +24,32 @@
                             <userLayoutGuide location="188" affinity="minX"/>
                         </userGuides>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78p-GW-PZW">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="78p-GW-PZW" userLabel="ViewGreen">
                                 <color key="backgroundColor" red="0.4276360076216893" green="1" blue="0.573591558520543" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="78p-GW-PZW" secondAttribute="height" multiplier="335:251" id="8ob-K8-dl6"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzj-QI-Gb2">
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="275" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzj-QI-Gb2" userLabel="ViewBlue">
                                 <color key="backgroundColor" red="0.58041574060912549" green="0.94228341833221763" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="mzj-QI-Gb2" secondAttribute="height" multiplier="67:55" id="sVv-JZ-HOR"/>
+                                    <constraint firstAttribute="width" secondItem="mzj-QI-Gb2" secondAttribute="height" multiplier="1:1" id="YPI-xN-oDS"/>
                                 </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="GCK-DJ-3X9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mzj-QI-Gb2" secondAttribute="trailing" constant="4" id="GJK-J9-eKk"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="78p-GW-PZW" secondAttribute="bottom" constant="11" id="N7q-t9-jn6"/>
-                            <constraint firstItem="78p-GW-PZW" firstAttribute="trailing" secondItem="mzj-QI-Gb2" secondAttribute="trailing" id="OmX-hj-wyW"/>
-                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="4" id="UmO-QE-CFC"/>
-                            <constraint firstItem="78p-GW-PZW" firstAttribute="leading" secondItem="mzj-QI-Gb2" secondAttribute="leading" id="lln-Im-NgD"/>
-                            <constraint firstItem="78p-GW-PZW" firstAttribute="top" secondItem="mzj-QI-Gb2" secondAttribute="bottom" constant="8" id="pGl-RG-Uwk"/>
+                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="leading" secondItem="78p-GW-PZW" secondAttribute="leading" id="1u3-2Z-ptB"/>
+                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="4" id="2eg-HC-Yg7"/>
+                            <constraint firstItem="78p-GW-PZW" firstAttribute="top" secondItem="mzj-QI-Gb2" secondAttribute="bottom" constant="4" id="6E5-OA-wVS"/>
+                            <constraint firstAttribute="bottom" secondItem="mzj-QI-Gb2" secondAttribute="bottom" constant="308" id="Jjf-8y-eqN"/>
+                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="4" id="Jjk-Dc-pyX"/>
+                            <constraint firstAttribute="trailing" secondItem="78p-GW-PZW" secondAttribute="trailing" constant="20" id="QFG-KW-ums"/>
+                            <constraint firstItem="mzj-QI-Gb2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="4" id="Yv5-EB-NKq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mzj-QI-Gb2" secondAttribute="trailing" constant="4" id="ail-NV-wCk"/>
+                            <constraint firstItem="78p-GW-PZW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="gPt-6t-NJF"/>
+                            <constraint firstItem="78p-GW-PZW" firstAttribute="top" secondItem="mzj-QI-Gb2" secondAttribute="bottom" constant="4" id="rmL-ux-nhe"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -62,6 +69,10 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" userLabel="InstrumentationViewControllers">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="333" affinity="minY"/>
+                            <userLayoutGuide location="187" affinity="minX"/>
+                        </userGuides>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
